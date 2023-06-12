@@ -4,10 +4,13 @@ import os
 
 
 if __name__ == "__main__":
+    # Sets a list of range tuples in the circadian rhythm
     circadian = [(80, 90), (50, 60), (20, 30), (80, 70), (50, 40), (20, 10)]
+    # Set the type of memory that we use
     memory = ["loss", "mean"]
+    # Set the number of samples 
     sample = 64
-
+    
     for cir in circadian:
         for mem in memory:
             dir = "Data/" + mem + "_" + str(cir[0]) + "-" + str(cir[1])
